@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        :root {
+            --maincolor: #036694;
+            --seccolor: #85c9e9;
+            --color: rgb(221, 228, 235);
+        }
+
+        .nav {
+            z-index: 2;
+            position: fixed;
+            background: var(--maincolor);
+            height: 43px;
+            width: 100%;
+            padding-top: 15px;
+            
+        }
+        
+        ul {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        ul li {
+            padding-left: 50px;
+            
+        }
+
+        ul li a {
+            color: aliceblue;
+            text-decoration: none;
+            border: 2px solid black;
+        }
+
+        .parent {
+            top: 65px;
+            position: relative;
+            z-index: 0;
+            border: 2px solid black;
+            height: 45vw;
+            width: 95%;
+            margin-left: 2.5%;
+            background: var(--seccolor);
+        }
+
+        .parent .left {
+            z-index: 1;
+            border: 2px solid black;
+            height: 80%;
+            width: 40%;
+            margin-left: 5%;
+            margin-top: 4%;
+            float: inline-start;
+            background: #a06a6a;
+        }
+
+        .parent .right {
+            z-index: 1;
+            border: 2px solid black;
+            height: 80%;
+            width: 40%;
+            margin-right: 5%;
+            margin-top: 4%;
+            float: inline-end;
+            background: #298b52;
+        }
+
+        .message {
+            display: block;
+            border: 2px solid black;
+            border-radius: 2vw;
+            box-sizing: border-box;
+            text-align: center;
+            width: 80vw;
+            height: 7vw;
+            margin-right: 9vw;
+            margin-left: 9vw;
+            padding: 4vw;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            background: #e45050;
+            color: var(--color);
+        }
+
+        .parent .profile {
+            position: relative;
+            border: 2px solid black;
+            border-radius: 100%;
+            width: 69px;
+            height: 69px;
+            top: 90%;
+            left: 93%;
+           
+            position:fixed;
+            background: #e49abf;
+            
+        }
+        .footer{
+            background: #e49abf;
+            height: 69px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </div>
+        <div class="parent">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="profile"></div>
+        </div>
+        <div class="message">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at fugiat, consectetur voluptas recusandae
+            quibusdam dignissimos omnis dolorem temporibus nam fuga minus sit cumque non?
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>

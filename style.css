@@ -1,0 +1,52 @@
+body{
+    background: #8d8484;
+}
+.card{
+    background: #ffffff;
+    border-radius: 10px;
+    height: 500px;
+    width: 300px;
+}
+.image{
+    padding: 10px;
+}
+.image img{
+    border-radius: 10px;
+}
+.cap{
+    position: relative;
+    left: 10px;
+    display: flex;
+}
+.cap span{
+    text-align: center;
+    padding: 0px 12px;
+    margin: 5px;
+    border: 2px solid grey;
+    border-radius: 13px;
+}
+.con{
+    padding:0px  10px;
+}
+.con h2{
+    margin:0px;
+}
+.con p{
+    
+    line-height: 15px;
+    
+}
+.botton{
+    text-align: center;
+    padding: 13px;
+}
+.botton button{
+    padding: 5px 13px;
+    border-radius: 30px; 
+    color: rgb(82, 82, 240);
+    background: #6b9fe4;
+    font-weight: 500;
+    }
+.button:hover{
+    background: #bfe1ee;
+}
